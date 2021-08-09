@@ -5,5 +5,5 @@ def to_hex(r, g, b)
 end
 
 def to_ints(hex)
-    [0, 0, 0]
+    hex.scan(/\w\w/).map(&:hex)
 end
